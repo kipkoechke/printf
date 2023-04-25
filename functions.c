@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
- * print_char - function that prints a char
+ * print_char - function that prints char
  * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: Width
  * @precision: Precision specification
  * @size: Size specifier
+ *
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
@@ -17,8 +19,8 @@ int print_char(va_list types, char buffer[],
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 /**
- * print_string - function that prints a string
- * @types: List a of arguments
+ * print_string - function that prints a str
+ * @types: List a of parameters
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -71,8 +73,8 @@ int print_string(va_list types, char buffer[],
 	return (write(1, str, length));
 }
 /**
- * print_percent - function that prints a percent sign
- * @types: List of arguments
+ * print_percent - function that prints a % sign
+ * @types: List of args
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -92,8 +94,8 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 /**
- * print_int - function that prints int
- * @types: List of arguments
+ * print_int - function that prints integer
+ * @types: List of parameters
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -169,10 +171,10 @@ int print_binary(va_list types, char buffer[],
 		sum += a[i];
 		if (sum || i == 31)
 		{
-			char z = '0' + a[i];
+		char z = '0' + a[i];
 
-			write(1, &z, 1);
-			count++;
+		write(1, &z, 1);
+		count++;
 		}
 	}
 	return (count);

@@ -1,10 +1,11 @@
 #include "main.h"
 #include <ctype.h>
+
 /**
- * get_width - function that calculates the width for printing
+ * get_width - Calculates the width for printing
  * @format: Format
  * @i: Parameter.
- * @list: list of arguments.
+ * @list: list of parameters
  *
  * Return: return width.
  */
