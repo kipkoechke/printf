@@ -51,6 +51,9 @@ int print_pointer(va_list types, char buffer[],
 		width, flags, padd, extra_c, padd_start));
 }
 /**
+ * print_non_printable - function prints ascii
+ * codes in hexa of non printable chars
+ * @types: List of arguments
  * print_non_printable - function prints ascii codes
  * in hexa of non printable chars
  * @types: List of parameters
@@ -182,4 +185,3 @@ int print_rot13string(va_list types, char buffer[],
 	}
 	return (count);
 }
-
